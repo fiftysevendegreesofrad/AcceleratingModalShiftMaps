@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Interactive maps of UK rail flows</title>
+</head>
+<body class="bg-dark text-light">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="container mt-5">
+    <div style="float: right; margin-left: 20px; margin-bottom: 20px;">
+    <img src="cardifflogo.png" width="180" height="180" alt="Logo" class="mb-3">
+    <br/>
+    <img src="greenalliancelogo.png" height="180" alt="Logo">
+    </div>
+    <h1 class="display-4">Interactive maps of UK rail flows:<br/>Visualising costs and times</h1>
+    <p class="lead">These interactive maps accompany the Green Alliance report <i>Accellerating Modal Shift</i>.</p>
+    <ul>
+    <li>
+    Generalized costs assume a value of time of &pound;15/hour. Real valus of time vary considerably depending on the traveller and trip purpose (usually less than this for leisure trips and more for business trips).
+    </li>
+    <li>Train costs are median values, often reflecting tickets bought in advance (standard fares are higher).</li>
+    <li>Train times are median values; real journey times vary depending on time of departure.</li>
+    <li>Car fuel costs are estimates from Trainline.com. Individual cars vary substantially in fuel costs.</li>
+    <li>
+    Full details of the method and data sources can be found in the technical report.
+    </li>
+    </ul>
+<table class="table table-dark"><thead><tr><th>Map data</th><th>Large PKM</th><th>Most Journeys</th><th>Principal Routes</th></tr></thead><tbody><tr><td>Perceived generalized cost of rail vs car</td><td><a href="Large PKM-rel_gc_vot15.html"><img src="Large PKM-rel_gc_vot15-small.png"</a></td><td><a href="Most Journeys-rel_gc_vot15.html"><img src="Most Journeys-rel_gc_vot15-small.png"</a></td><td><a href="Principal Routes-rel_gc_vot15.html"><img src="Principal Routes-rel_gc_vot15-small.png"</a></td></tr><tr><td>Relative price of rail vs car</td><td><a href="Large PKM-trainrelcost.html"><img src="Large PKM-trainrelcost-small.png"</a></td><td><a href="Most Journeys-trainrelcost.html"><img src="Most Journeys-trainrelcost-small.png"</a></td><td><a href="Principal Routes-trainrelcost.html"><img src="Principal Routes-trainrelcost-small.png"</a></td></tr><tr><td>Relative time of rail vs car</td><td><a href="Large PKM-trainreltime.html"><img src="Large PKM-trainreltime-small.png"</a></td><td><a href="Most Journeys-trainreltime.html"><img src="Most Journeys-trainreltime-small.png"</a></td><td><a href="Principal Routes-trainreltime.html"><img src="Principal Routes-trainreltime-small.png"</a></td></tr></tbody></table>
+    <p>&nbsp;</p>
+    <p>These maps were produced by Crispin Cooper, Cardiff University. The work was funded by the Foundation for Integrated Transport, and Trainline.com. The project was managed by Green Alliance. The maps contain data copyrighted to:
+    <ul>
+        <li>Trainline.com, released under license for this project</li>
+        <li>Office of Road and Rail, released under Open Government License v3</li>
+        <li>OpenStreetMap contributors, released under the Open Database License</li>
+        <li>Ordnance Survey (C) Crown Copyright and Database Right 2020-24</li>
+    </ul>
+    <p>The interactive maps are built using the <a href="https://deck.gl/">deck.gl</a> and <a href="https://pydeck.gl/">pydeck</a> libraries.</p>
+</body>
+</html>
